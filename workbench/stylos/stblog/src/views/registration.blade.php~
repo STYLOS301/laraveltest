@@ -1,0 +1,6 @@
+@section('contetnt')
+
+<h2> Registration </h2>
+
+
+@stop 

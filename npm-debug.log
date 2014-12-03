@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'gulp-sass' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'gulp-sass', null ]
+5 verbose cache add name=undefined spec="gulp-sass" args=["gulp-sass",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'gulp-sass',
+6 verbose parsed url   path: 'gulp-sass',
+6 verbose parsed url   href: 'gulp-sass' }
+7 silly lockFile 993318e6-gulp-sass gulp-sass
+8 verbose lock gulp-sass /home/aisin/.npm/993318e6-gulp-sass.lock
+9 silly lockFile 993318e6-gulp-sass gulp-sass
+10 silly lockFile 993318e6-gulp-sass gulp-sass
+11 verbose addNamed [ 'gulp-sass', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 59b5e58d-gulp-sass gulp-sass@
+14 verbose lock gulp-sass@ /home/aisin/.npm/59b5e58d-gulp-sass.lock
+15 silly addNameRange { name: 'gulp-sass', range: '*', hasData: false }
+16 verbose url raw gulp-sass
+17 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-sass' ]
+18 verbose url resolved https://registry.npmjs.org/gulp-sass
+19 info trying registry request attempt 1 at 12:48:00
+20 http GET https://registry.npmjs.org/gulp-sass
+21 http 200 https://registry.npmjs.org/gulp-sass
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Mon, 01 Dec 2014 08:49:14 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+22 silly registry.get     etag: '"3YO14ZN5F9PEQXPJ9C4QC3PX8"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=60',
+22 silly registry.get     'content-length': '25623',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '28',
+22 silly registry.get     'x-served-by': 'cache-ams4124-AMS',
+22 silly registry.get     'x-cache': 'HIT',
+22 silly registry.get     'x-cache-hits': '1',
+22 silly registry.get     'x-timer': 'S1417423754.719405,VS0,VE0',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'gulp-sass', range: '*', hasData: true }
+24 silly addNameRange versions [ 'gulp-sass',
+24 silly addNameRange   [ '0.1.0',
+24 silly addNameRange     '0.2.1',
+24 silly addNameRange     '0.2.2',
+24 silly addNameRange     '0.2.3',
+24 silly addNameRange     '0.3.0',
+24 silly addNameRange     '0.4.0',
+24 silly addNameRange     '0.4.1',
+24 silly addNameRange     '0.5.0',
+24 silly addNameRange     '0.5.1',
+24 silly addNameRange     '0.5.2',
+24 silly addNameRange     '0.6.0',
+24 silly addNameRange     '0.7.0',
+24 silly addNameRange     '0.7.1',
+24 silly addNameRange     '0.7.2',
+24 silly addNameRange     '0.7.3',
+24 silly addNameRange     '1.0.0',
+24 silly addNameRange     '1.1.0',
+24 silly addNameRange     '1.2.0',
+24 silly addNameRange     '1.2.1',
+24 silly addNameRange     '1.2.2',
+24 silly addNameRange     '1.2.3' ] ]
+25 verbose addNamed [ 'gulp-sass', '1.1.0' ]
+26 verbose addNamed [ '1.1.0', '1.1.0' ]
+27 silly lockFile 62bf0651-gulp-sass-1-1-0 gulp-sass@1.1.0
+28 verbose lock gulp-sass@1.1.0 /home/aisin/.npm/62bf0651-gulp-sass-1-1-0.lock
+29 silly lockFile 2587f12f-rg-gulp-sass-gulp-sass-1-1-0-tgz https://registry.npmjs.org/gulp-sass/-/gulp-sass-1.1.0.tgz
+30 verbose lock https://registry.npmjs.org/gulp-sass/-/gulp-sass-1.1.0.tgz /home/aisin/.npm/2587f12f-rg-gulp-sass-gulp-sass-1-1-0-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-sass/-/gulp-sass-1.1.0.tgz',
+31 verbose addRemoteTarball   '52d5bf1ee062bf59667fcb758f6985af86ce67e4' ]
+32 silly lockFile 2587f12f-rg-gulp-sass-gulp-sass-1-1-0-tgz https://registry.npmjs.org/gulp-sass/-/gulp-sass-1.1.0.tgz
+33 silly lockFile 2587f12f-rg-gulp-sass-gulp-sass-1-1-0-tgz https://registry.npmjs.org/gulp-sass/-/gulp-sass-1.1.0.tgz
+34 silly lockFile 62bf0651-gulp-sass-1-1-0 gulp-sass@1.1.0
+35 silly lockFile 62bf0651-gulp-sass-1-1-0 gulp-sass@1.1.0
+36 silly lockFile 59b5e58d-gulp-sass gulp-sass@
+37 silly lockFile 59b5e58d-gulp-sass gulp-sass@
+38 error Error: EACCES, mkdir '/home/aisin/tmp/npm-30899-2YtF0g4F'
+38 error  { [Error: EACCES, mkdir '/home/aisin/tmp/npm-30899-2YtF0g4F']
+38 error   errno: 3,
+38 error   code: 'EACCES',
+38 error   path: '/home/aisin/tmp/npm-30899-2YtF0g4F' }
+39 error Please try running this command again as root/Administrator.
+40 error System Linux 3.13.0-32-generic
+41 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "gulp-sass"
+42 error cwd /home/aisin/workspace/php/styblog
+43 error node -v v0.10.25
+44 error npm -v 1.3.10
+45 error path /home/aisin/tmp/npm-30899-2YtF0g4F
+46 error code EACCES
+47 error errno 3
+48 error stack Error: EACCES, mkdir '/home/aisin/tmp/npm-30899-2YtF0g4F'
+49 verbose exit [ 3, true ]
