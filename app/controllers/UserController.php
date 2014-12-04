@@ -107,6 +107,7 @@ extends Controller
         if (Input::server("REQUEST_METHOD") == "POST")
         {
             $validator = Validator::make(Input::all(), [
+                //"username"              => "required|username",
                 "email"                 => "required|email",
                 "password"              => "required|min:6",
                 "password_confirmation" => "required|same:password",
@@ -152,4 +153,37 @@ extends Controller
         Auth::logout();
         return Redirect::route("user/login");
     }
+    public function showLogin()
+    {
+	// show the form
+	return View::make("user/registration");
+    }
+    public function register()
+	{
+	$data = Input::all();
+	$rules = array(
+                        'username' => 'required|min:6|unique:user',
+			'email'    => 'required|email|min:6|unique:user', // make sure the email is an actual email
+			'password' => 'required|min:6|same:repeat-password', // password can only be alphanumeric and has to be greater than 3 characters
+                        'repeat-password' => 'required|min:6'
+            );
+
+		// run the validation rules on the inputs from the form
+		$validator = Validator::make(Input::all(), $rules);
+
+		// if the validator fails, redirect back to the form
+		if ($validator->fails()) 
+		{
+                    return $messages = $validator->messages()->toArray(); //если ошибка при валидации вывести ошибку на экран             
+                    //return view::make('errors.validation')->with('errors', $validator->messages()->toArray());
+		} 
+            $user = User::register($data);
+                if (!$user instanceof \Illuminate\Database\Eloquent\Model)
+                {
+                    return $user;
+                }
+            Auth::login($user, true);
+            
+            return Redirect::to('/profile');
+	}
 }

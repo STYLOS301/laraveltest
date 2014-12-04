@@ -7,6 +7,7 @@ implements UserInterface, RemindableInterface
 {
     protected $table = "user";
     protected $hidden = ["password"];
+    public static $unguarded = true;
     public function getAuthIdentifier()
     {
         return $this->getKey();
@@ -37,4 +38,21 @@ public function getRememberTokenName()
 {
     return 'remember_token';
 }
+public static function register($data) {
+    try
+        {
+            $user = User::create([
+              'username'  => $data['username'],  
+              'password' => Hash::make($data['password']),
+              'email' => $data['email']  
+              
+                                 ]);
+        }
+    catch (exception $e)
+        {
+            return $e;
+     
+        }
+            return $user;
+ }
 }
